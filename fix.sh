@@ -12,3 +12,5 @@ sudo cp conf/startwm.sh /etc/xrdp/startwm.sh
 # Assuming it is desired to allow multiple remote connections
 sudo sed -i 's/Policy=Default/Policy=UBDC/g' /etc/xrdp/sesman.ini
 
+# Restart xrdp and xrdp-sesman services
+sudo systemctl restart xrdp xrdp-sesman
